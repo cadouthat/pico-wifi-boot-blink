@@ -1,0 +1,3 @@
+[submodule "pico-wifi-boot"]
+	path = pico-wifi-boot
+	url = https://github.com/cadouthat/pico-wifi-boot.git
