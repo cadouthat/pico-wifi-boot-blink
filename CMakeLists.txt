@@ -4,7 +4,8 @@ include(pico_sdk_import.cmake)
 
 add_subdirectory(pico-wifi-boot)
 
-project(pico_drone_project C CXX ASM)
+project(pico_wifi_boot_blink_project C CXX ASM)
+
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
@@ -21,9 +22,6 @@ target_include_directories(main PRIVATE ${CMAKE_CURRENT_LIST_DIR} )
 target_link_libraries(main
   pico_cyw43_arch_lwip_threadsafe_background
   pico_stdlib
-  hardware_flash
-  hardware_sync
-  cmsis_core
   pico_wifi_boot
 )
 
