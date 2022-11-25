@@ -13,7 +13,6 @@ bool wifi_init() {
     cyw43_arch_enable_sta_mode();
 
     if (!wifi_connect()) {
-        // TODO: fallback to AP mode
         return false;
     }
 
